@@ -1,0 +1,19 @@
+.google_canvas {
+    height: 800px;
+    margin: 12px;
+    box-shadow: 0 3px 25px black;
+}
+
+.google_canvas h1 {
+    font-size: 15px;
+}
+
+.google_canvas h2 {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.banner h1 {
+    font-size: 3em;
+    text-align: center;
+}

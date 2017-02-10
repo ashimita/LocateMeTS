@@ -30,6 +30,6 @@ FB.init({
 
   This will open the link in the browser http://localhost:3000/
 
-*** Issue:
+#### Issue:
 
 There might be an error: Network location provider at 'https://www.googleapis.com/' : Returned error code 403 and the map may not load. This is a problem with the Google Map api.

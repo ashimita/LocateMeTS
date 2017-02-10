@@ -18,13 +18,14 @@
 
 * In the app.component.ts, modify the app_id obtained from the facebook https://developers.facebook.com/docs/facebook-login
 
+```javascript
 FB.init({
       appId: '<your_fb_app_id>',
       status: true,
       cookie: true,
       xfbml: true
     });
-
+```
 
 * On the command line, issue **npm install** and then **npm start** (to start the local server)
 

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Angular QuickStart</title>
+    <title>Locate Me</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="/">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/867b997f4a.js"></script>
+
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -13,6 +15,10 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFcObsHAjXM2JYpgVUz_fEIJke4HKrWX4"></script>
+    <script src="//connect.facebook.net/en_US/all.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+
+      <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 
     <script src="systemjs.config.js"></script>
     <script>
@@ -21,7 +27,13 @@
   </head>
 
   <body>
-<!-- <facebook-login></facebook-login> -->
-  <app-root></app-root>
-  </body>
+
+    <facebook-login></facebook-login>
+
+          <footer class="footer">
+              <div class="container">
+                    <p>&copy; 2017 Locate Me, Inc.</p>
+              </div>
+          </footer>
+        </body>
 </html>

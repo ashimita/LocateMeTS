@@ -1,5 +1,7 @@
 ## LocateMe Application
 
+* This uses Angular2 and TypeScript
+
 * This application asks the user to login to his Facebook Account, if he is not logged in already.
 
 * Once logged in, it greets the Facebook user with his first name (as in the Facebook account).

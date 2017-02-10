@@ -26,10 +26,10 @@ export class AppComponent implements OnInit {
   @Output()
   public userChangeEvent: EventEmitter<User> = new EventEmitter();
 
-  constructor(private userService: UserService, private ngZone: NgZone) {}
+  constructor(private userService: UserService, private ngZone: NgZone) { }
 
   ngOnInit() {
-this.displayMap();
+    this.displayMap();
     FB.init({
       appId: '146478719191092',
       status: true,
@@ -65,16 +65,16 @@ this.displayMap();
           console.log(result.error);
           self.user = new User();
         }
-          self.userChangeEvent.emit(fbUser);
-          self.userChangeEvent.subscribe(fbUser);
+        self.userChangeEvent.emit(fbUser);
+        self.userChangeEvent.subscribe(fbUser);
       });
   }
 
   login() {
-  var fbUser = new User();
-  var self = this;
+    var fbUser = new User();
+    var self = this;
     self.userService.getUserChangeEmitter().subscribe(fbUser);
-    if(this.user.loggedIn) {
+    if (this.user.loggedIn) {
       //logout
       FB.logout((result: any) => {
         fbUser.loggedIn = false;
@@ -85,7 +85,7 @@ this.displayMap();
       });
     } else {
       FB.login((result: any) => {
-        if(result.status == 'connected') {
+        if (result.status == 'connected') {
           self.me();
         }
         console.log(result.status);
